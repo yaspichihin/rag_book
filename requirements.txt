@@ -3,3 +3,4 @@ python-dotenv
 scikit-learn
 spacy
 nltk
+pandas

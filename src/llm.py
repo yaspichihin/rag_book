@@ -20,6 +20,10 @@ def call_llm(texts: list[str]) -> str:
                     "content": "You are an expert in Natural Language Processing (NLP). Always respond in Russian. Keep your answers as short and to the point as possible, without unnecessary explanations, introductions, polite phrases, or repetitions.",
                 },
                 {
+                    "role": "assistant",
+                    "content": "1.You can explain read the input and answer in detail",
+                },
+                {
                     "role": "user",
                     "content": prompt,
                 },

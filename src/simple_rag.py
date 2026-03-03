@@ -1,9 +1,12 @@
-from ast import Tuple
-from operator import ge
+from typing import Tuple
 from typing import Collection, Tuple
 
-from similarity import calc_enhanced_similarity
+from similarity import calc_enhanced_similarity, calc_cos_similarity
+from db import get_records
+from display import print_text
 from llm import call_llm
+
+
 
 ## Поиск и сопоставление ключевых слов
 
@@ -33,10 +36,6 @@ def find_best_match_keyword_search(
 
     return best_score, best_record
 
-
-from similarity import calc_cos_similarity
-from db import get_records
-from display import print_text
 
 query = "define a rag store"
 db_records = get_records()
