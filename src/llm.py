@@ -17,7 +17,7 @@ def call_llm(texts: list[str]) -> str:
             messages=[
                 {
                     "role": "system",
-                    "content": "You are an NLP expert. Always respond in Russian.",
+                    "content": "You are an expert in Natural Language Processing (NLP). Always respond in Russian. Keep your answers as short and to the point as possible, without unnecessary explanations, introductions, polite phrases, or repetitions.",
                 },
                 {
                     "role": "user",

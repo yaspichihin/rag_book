@@ -1,9 +1,12 @@
 import textwrap
 
-def format_text(text: str, width: int = 80) -> str:
+
+def format_text(text: str, width: int) -> str:
     return textwrap.fill(text, width=width)
 
-def print_text(text: str) -> None:
+
+def print_text(text: str, width: int = 80) -> None:
     print("Response:")
-    print(format_text(text))
-  
+    print("-" * width)
+    print(format_text(text, width))
+    print("-" * width)
